@@ -17,8 +17,8 @@ response.status(200).json({message:"Hello Welcome to my todo API"});
 
 app.post('/todo',todoController.addTodo);
 app.get('/todo',todoController.getAllTodo);
-app.patch('/todo',todoController.updateTodoById);
-app.delete('/todo/todoId:',todoController.deleteTodoById);
+app.patch('/todo/:todoId',todoController.updateTodoById);
+app.delete('/todo/:todoId',todoController.deleteTodoById);
 app.get('/todo/:todoId',todoController.getTodoById);
 
 // listening to request
