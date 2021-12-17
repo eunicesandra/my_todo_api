@@ -11,7 +11,7 @@ const todoController = require('./controllers/todoController');
   
 app.use(express.json());
 
-app.get('/',request,response)=>{
+app.get('/',(request,response)=>{
 response.status(200).json({message:"Hello Welcome to my todo API"});
 });
 
